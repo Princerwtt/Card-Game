@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>War Game</title>
-  </head>
-  <body>
+</head>
+<body>
     <link rel="stylesheet" href="style.css" />
-    <h2>War Game</h2>
+    <h1>War Game</h1>
+    <form>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name">
+      <button type="submit">Submit</button>
+      <h2 id="name-output"></h2>
+    </form>
     <span id="output"></span>
-    <!-- <div id="player"></div>
-    <div id="computer"></div> -->
-    <div id="buttons">
-      <button id="shuffle" onclick="displayCards()">Suffle Card</button>
-      <button id="draw">Draw Card</button>
-      <button id="reset" type="reset">Reset Game</button>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="master-div">
+        <div  class="card">
+          <div id="userCard" class="card-image"></div>
+        </div>
+        <div  class="card">
+            <div id="computerCard" class="card-image"></div>
+          </div>
+        </div>
+        <h3 id="winner-output"></h3>
+        <div id="buttons">
+            <button id="shuffle" onclick="displayCards()">Suffle Card</button>
+            <button id="draw">Draw Card</button>
+            <button id="reset" type="reset">Reset Game</button>
+          </div>
+          <script src="script.js"></script>
+    
+</body>
 </html>
